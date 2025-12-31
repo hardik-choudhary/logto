@@ -7,7 +7,7 @@ import LogtoLogoShadow from '@/shared/assets/icons/logto-logo-shadow.svg?react';
 
 import styles from './index.module.scss';
 
-const logtoUrl = `https://logto.io/?${new URLSearchParams({
+const logtoUrl = `https://example.com/?${new URLSearchParams({
   utm_source: 'sign_in',
   utm_medium: 'powered_by',
 }).toString()}`;
@@ -180,8 +180,7 @@ const LogtoSignature = ({ className, theme }: Props) => {
         <span data-logto-signature-text className={styles.text}>
           Powered by
         </span>
-        <LogtoLogoShadow data-logto-signature-icon="static" className={styles.staticIcon} />
-        <LogtoLogo data-logto-signature-icon="highlight" className={styles.highlightIcon} />
+        Example
       </a>
     </div>
   );
